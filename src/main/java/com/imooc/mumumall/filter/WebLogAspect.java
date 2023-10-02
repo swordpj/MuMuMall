@@ -39,7 +39,6 @@ public class WebLogAspect {
                 "." + joinPoint.getSignature().getName());
         logger.info("ARGS: " + Arrays.toString(joinPoint.getArgs()));
     }
-
     @AfterReturning(returning = "res", pointcut = "webLog()")
     public void doAfterReturning(Object res) throws JsonProcessingException {
         logger.info("RESPONSE: " + new ObjectMapper().writeValueAsString(res));
