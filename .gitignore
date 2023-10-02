@@ -15,10 +15,10 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
+### IntelliJ IDEA ###
 *.ipr
 
 ### NetBeans ###
